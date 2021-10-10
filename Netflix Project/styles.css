@@ -70,7 +70,7 @@
     }
 
     h5 {
-        color: white;
+        color: #808080;
         font-size: 15px;
         margin-left: -10px;
         padding: 0;
@@ -79,4 +79,36 @@
     .tv-shows {
         display: flex;
         justify-content: end;
+    }
+
+    .greyFont {
+        color: #808080;
+    }
+
+    .noMarginH3 {
+        margin-top: -5%;
+        margin-left: -1.35%;
+        padding-top: 5%;
+    }
+
+    .noMarginH5 {
+        margin-left: -6%;
+    }
+
+    .aToRight {
+        text-align: right;
+    }
+
+    .pseudo-body {
+        background-color: white;
+    }
+
+    .cancelButton {
+        background-color: #e4e2e2;
+        border-radius: 1px;
+        display: block;
+        font-size: 11px;
+        padding: 7px 30px 6px 30px;
+        font-weight: 700;
+        margin-left: -6%;
     }

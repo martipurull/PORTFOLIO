@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Account</title>
+
+</head>
+
+<body>
+
+    <!-- Start of Marti's navbar for Netflix project -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img id="netflixLogo" class="img-fluid ml-2" src="./assets/netflix_logo.png"
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item inactiveLink">
+                    <a class="nav-link" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item inactiveLink">
+                    <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item inactiveLink">
+                    <a class="nav-link" href="#">Recently Added</a>
+                </li>
+                <li class="nav-item inactiveLink">
+                    <a class="nav-link" href="account.html">My List</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item mr-3">
+                        <img data-toggle="modal" data-target="#modalSearchForm" src="./assets/search-white.svg" alt="">
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a href="#">KIDS</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <img data-toggle="modal" data-target="#notificationsMenu" src="./assets/bell-fill-white.svg"
+                            alt="">
+                    </li>
+                    <li class="dropdown mr-3 dropleft">
+                        <img src="./assets/avatar.png" type="button" id="avatarDropdownMenuImg" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        <img src="./assets/caret-down-fill-white.svg" type="button" id="avatarDropdownMenuCaret"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu" aria-labelledby="avatarDropdownMenuButton">
+                            <a class="dropdown-item" href="account.html">My Account</a>
+                            <a class="dropdown-item" href="profile.html">Profile</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal fade" id="modalSearchForm" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title " id="exampleModalLabel">Search Your Favourite Show
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Marti's navbar for Netflix project -->
+    <div class="container-fluid pseudo-body">
+        <div class="container mt-5 mb-5">
+            <h3 class="noMarginH3">Account</h3>
+            <div class="row mt-3 border-top py-3">
+                <div class="col-12 col-sm-3">
+                    <h5 class="noMarginH5">MEMBERSHIP & BILLING</h5>
+                    <button type="button" class="btn btn-light cancelButton">Cancel Membership</button>
+                </div>
+                <div class="col-12 col-sm-9">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <p><strong>student@strive.school</strong></p>
+                            <p class="greyFont password">Password:******</p>
+                            <p class="greyFont phone">Phone:+48572215555</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a class="d-block aToRight" href="">Change account email</a>
+                            <a class="d-block aToRight" href="">Change password</a>
+                            <a class="d-block aToRight" href="">Change phone number</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <img class="d-inline-block" src="./assets/PayPal-black.svg" alt="paypal" width="80"
+                                height="40" />
+                            <p class="d-inline-block"><strong>admin@strive.school</strong></p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a class="d-block aToRight" href="">Update payment info</a>
+                            <a class="d-block aToRight" href="">Billing details</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 justify-content-end">
+                            <a class="d-block aToRight" href="">Redeem gift card or promo code</a>
+                            <a class="d-block aToRight" href="">Where to buy gift cards</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top py-3">
+                <div class="col-12 col-sm-3">
+                    <h5 class="noMarginH5">PLAN DETAILS</h5>
+                </div>
+                <div class="col-12 col-sm-9">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <p class="d-inline-block">Premium</p>
+                            <img class="d-inline-block" src="./assets/Ultra_HD_-_Logo.svg" alt="" width="80"
+                                height="30" />
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a class="d-block aToRight" href="">Change plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top py-3">
+                <div class="col-3">
+                    <h5 class="noMarginH5">SETTINGS</h5>
+                </div>
+                <div class="col-12 col-sm-9">
+                    <div class="row">
+                        <div class="col-12">
+                            <a class="d-block" href="#">Parental Controls</a>
+                            <a class="d-block" href="#">Test participation</a>
+                            <a class="d-block" href="#">Manage download devices</a>
+                            <a class="d-block" href="#">Activate a device</a><br>
+                            <a class="d-block" href="#">Recent device streaming activity</a>
+                            <a class="d-block" href="#">Sign out of all devices</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-top py-3">
+                <div class="col-12 col-sm-3">
+                    <h5 class="noMarginH5">MY PROFILE</h5>
+                </div>
+                <div class="col-12 col-sm-9">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <img class="d-inline-block" src="./assets/avatar.png" width="40" height="40" alt="">
+                            <p class="d-inline-block">Strive Student</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a class="d-block aToRight" href="">Manage profiles</a>
+                            <a class="d-block aToRight" href="">Add profile email</a>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-12 col-sm-6">
+                            <a class="d-block" href="">Language</a>
+                            <a class="d-block" href="">Playback settings</a>
+                            <a class="d-block" href="">Subtitle appearance</a>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <a class="d-block" href="">Viewing activity</a>
+                            <a class="d-block" href="">Ratings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start of Marti's footer for Netflix project -->
+
+    <div class="container-fluid footerContainer">
+        <div class="row">
+            <div id="logoDiv" class="d-inline">
+                <img class="mr-2 socialmedia-logo-img" src="./assets/facebook-grey.svg" alt="">
+                <img class="mr-2 socialmedia-logo-img" src="./assets/instagram-grey.svg" alt="">
+                <img class="mr-2 socialmedia-logo-img" src="./assets/twitter-grey.svg" alt="">
+                <img class="mr-2 socialmedia-logo-img" src="./assets/youtube-grey.svg" alt="">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-2 mt-3">
+                <p>Audio and Subtitles</p>
+                <p>Media Center</p>
+                <p>Privacy</p>
+                <p>Contact Us</p>
+                <button id="serviceCodeBtn">Service Code</button>
+                <p class="text-nowrap mt-3" id="copyrightNotice">&copy; 1997-2019 Netflix, Inc.
+                    {i-7868d76f8dfygd8fgfd}
+                </p>
+            </div>
+            <div class="col-lg-2 mt-3">
+                <p>Audio Description</p>
+                <p>Investor Relations</p>
+                <p>Legal Notices</p>
+            </div>
+            <div class="col-lg-2 mt-3">
+                <p>Help Center</p>
+                <p>Jobs</p>
+                <p>Cookie Preferences</p>
+            </div>
+            <div class="col-lg-2 mt-3">
+                <p>Gift Cards</p>
+                <p>Terms of Use</p>
+                <p>Corporate Information</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Marti's footer for Netflix project -->
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
