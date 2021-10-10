@@ -1,0 +1,82 @@
+ body {
+        font-family: 'Martel Sans', sans-serif;
+        background-color: black;
+    }
+
+    #netflixLogo {
+        max-width: 180px;
+        max-width: 75.6px;
+    }
+
+    .navbar {
+        background-color: black;
+    }
+
+    .d-flex img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .d-flex:hover {
+        opacity: 0.6;
+    }
+
+    #avatarDropdownMenuImg {
+        width: 30px;
+        height: 30px;
+    }
+
+    #avatarDropdownMenuCaret {
+        width: 10px;
+        height: 10px;
+    }
+
+    li a {
+        color: white;
+        font-size: 0.8rem;
+        margin-top: 7px;
+    }
+
+    #emptySpaceContainer {
+        width: 100%;
+        height: 100px;
+        background-color: red;
+    }
+
+    .footerContainer {
+        background-color: black;
+        color: #808080;
+        font-size: 10px;
+    }
+
+    .socialmedia-logo-img {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+    }
+
+    #logoDiv {
+        margin-top: 10px;
+        margin-left: 17.6%;
+    }
+
+    #serviceCodeBtn {
+        color: #808080;
+        background-color: transparent;
+        border: 1px solid #808080;
+        border-radius: 1px;
+        font-size: 10px;
+        padding: 7px 5px 3px 5px;
+    }
+
+    h5 {
+        color: white;
+        font-size: 15px;
+        margin-left: -10px;
+        padding: 0;
+    }
+
+    .tv-shows {
+        display: flex;
+        justify-content: end;
+    }
