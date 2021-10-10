@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="netflixLogo" class="img-fluid ml-2" src="./assets/netflix_logo.png"
+                alt=""></a>
+    </div>
+
+
+    <div class="container mt-5 px-5">
+        <div class="row justify-content-around">
+            <div class="col-4">
+
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-12 text-left">
+                        <h2 class="profileTitle">Edit Profile</h2>
+                    </div>
+                </div>
+                <div class="row border-top mt-1 mb-4">
+                    <div class="col-2 mt-3 mainLeftColumnMargin">
+                        <img class="profileAvatarImg" src="./assets/avatar.png" alt="">
+                        <img class="profileEditIcon" src="./assets/pencil-fill-white.svg" alt="">
+                    </div>
+                    <div class="col-10 mt-3">
+                        <div class="row mb-4">
+                            <div class="col-12 mainRightColumnMargin">
+                                <h6 class="profileName">Strive Student</h6>
+                                <p class="profileSubtitle">Language:</p>
+                                <div class="dropdown">
+                                    <button class="btn-sm languageButton dropdown-toggle" type="button"
+                                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        English
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">Portuguese</a>
+                                        <a class="dropdown-item" href="#">Catalan</a>
+                                        <a class="dropdown-item" href="#">Italian</a>
+                                        <a class="dropdown-item" href="#">French</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row border-top mt-1 mb-4">
+                            <div class="col-12 mt-3 mainRightColumnMargin">
+                                <p class="profileSubtitle">Maturity Ratings</p>
+                                <p class="maturityRatings">ALL MATURITY RATINGS</p>
+                                <p class="profileSubtitle"><small>Show titles of <strong>all maturity ratings</strong>
+                                        for this
+                                        profile.</small></p>
+                                <button class="btn profileEditButton">EDIT</button>
+                            </div>
+                        </div>
+                        <div class="row border-top mt-1 mb-4">
+                            <div class="col-12 mt-3 mainRightColumnMargin">
+                                <p class="profileSubtitle">Autoplay Controls</p>
+                                <div>
+
+                                    <label class="checkmarkLabel" for="autoplayNextEpisode"><small>Autoplay next
+                                            episode in a
+                                            series on all
+                                            devices.</small>
+                                        <input type="checkbox" id="autoplayNextEpisode" name="nextEpisode" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div>
+
+                                    <label class="checkmarkLabel" for="autoplayPreviews"><small>Autoplay previews while
+                                            browsing on all
+                                            devices.</small>
+                                        <input type="checkbox" id="autoplayPreviews" name="previews" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row border-top mt-1 mb-4">
+                    <div class="col-12">
+                        <button id="profileSaveButton" class="btn profileControlButton">SAVE</button>
+                        <button class="btn profileControlButton">CANCEL</button>
+                        <button class="btn profileControlButton">DELETE PROFILE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

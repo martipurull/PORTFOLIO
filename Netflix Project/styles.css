@@ -112,3 +112,131 @@
         font-weight: 700;
         margin-left: -6%;
     }
+
+    .profileTitle {
+        color: white;
+        font-size: 4rem;
+        margin-left: -3%;
+    }
+
+    .profileSubtitle {
+        color: #808080;
+    }
+
+    .profileAvatarImg {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .mainLeftColumnMargin {
+        margin-left: -2%;
+    }
+
+    .mainRightColumnMargin {
+        margin-left: -3%;
+    }
+
+    .profileEditIcon {
+        max-width: 15px;
+        max-height: 15px;
+        background-color: black;
+        border: 1px solid white;
+        padding: 2px;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: -15.5%;
+        margin-left: 5%;
+    }
+
+    .profileName {
+        background-color: #808080;
+        color: white;
+        padding: 10px 0px 5px 10px;
+        margin-right: 15%;
+    }
+
+    .languageButton {
+        background-color: transparent;
+        color: #e4e2e2;
+        border: 1px solid #e4e2e2;
+        border-radius: 0px;
+        padding: 7px 25px 3px 10px;
+        text-align: left;
+    }
+
+    .maturityRatings {
+        background-color: #424242;
+        color: white;
+        font-weight: 700px;
+        padding-top: 5px;
+        margin-right: 50%;
+        text-align: center;
+    }
+
+    .profileEditButton {
+        background-color: transparent;
+        border: 1px solid #808080;
+        border-radius: 0px;
+        color: #808080;
+        padding: 7px 20px 3px 20px;
+        font-size: 14px;
+    }
+
+    .profileControlButton {
+        margin: 25px 10px 10px 10px;
+        background-color: transparent;
+        border: 1px solid #808080;
+        border-radius: 0px;
+        color: #808080;
+        padding: 7px 30px 3px 30px;
+        font-size: 20px;
+    }
+
+    #profileSaveButton {
+        margin-left: -2.1%;
+        background-color: #e4e2e2;
+        color: black;
+        font-weight: 700;
+    }
+
+    .checkmarkLabel {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #808080;
+    }
+
+    .checkmarkLabel input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        border: 0.25px solid #808080;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    .checkmarkLabel input:checked ~ .checkmark:after {
+        display: block;
+    }
