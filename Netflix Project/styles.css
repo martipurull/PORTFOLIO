@@ -104,7 +104,7 @@
     }
 
     .cancelButton {
-        background-color: #e4e2e2;
+        background-color: #99A1A7;
         border-radius: 1px;
         display: block;
         font-size: 11px;
@@ -157,8 +157,8 @@
 
     .languageButton {
         background-color: transparent;
-        color: #e4e2e2;
-        border: 1px solid #e4e2e2;
+        color: #99A1A7;
+        border: 1px solid #99A1A7;
         border-radius: 0px;
         padding: 7px 25px 3px 10px;
         text-align: left;
@@ -194,49 +194,49 @@
 
     #profileSaveButton {
         margin-left: -2.1%;
-        background-color: #e4e2e2;
+        background-color: #99A1A7;
         color: black;
         font-weight: 700;
     }
 
-    .checkmarkLabel {
-        display: block;
+    .checkbox-container {
         position: relative;
-        padding-left: 35px;
-        margin-bottom: 12px;
-        cursor: pointer;
-        font-size: 16px;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        color: #808080;
-    }
-
-    .checkmarkLabel input {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-    }
-
-    .checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 25px;
-        width: 25px;
-        background-color: transparent;
-        border: 0.25px solid #808080;
-    }
-
-    .checkmark:after {
-        content: "";
-        position: absolute;
-        display: none;
     }
     
-    .checkmarkLabel input:checked ~ .checkmark:after {
-        display: block;
+    input[type="checkbox"]:not(:checked),
+    input[type="checkbox"]:checked {
+        position: absolute;
+        left: 0;
+        top: -8%;
+        opacity: 0;
+    }
+
+    [type="checkbox"]:not(:checked) ~ .checkmark::before,
+    [type="checkbox"]:checked ~ .checkmark::before {
+        content:"";
+        border: 0.1px solid #99A1A7;
+        width: 1.4em;
+        height: 1.4em;
+        position: absolute;
+        left: 0;
+        top: -8%;
+        -webkit-transition: all .275s;
+        transition: all .275s;
+    }
+    [type="checkbox"]:not(:checked) ~ .checkmark::after,
+    [type="checkbox"]:checked ~ .checkmark::after {
+        content: "x";
+        border: 0.1px solid #99A1A7;
+        width: 1.4em;
+        height: 1.4em;
+        position: absolute;
+        left: 0;
+        top: -8%;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+    }
+
+    .checkmarkLabel {
+        margin-left: 6%;
+        color: #99A1A7;
     }

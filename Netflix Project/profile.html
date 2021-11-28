@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;700;900&display=swap" rel="stylesheet">
@@ -71,24 +72,21 @@
                         <div class="row border-top mt-1 mb-4">
                             <div class="col-12 mt-3 mainRightColumnMargin">
                                 <p class="profileSubtitle">Autoplay Controls</p>
-                                <div>
-
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="autoplayNextEpisode" name="nextEpisode" checked>
                                     <label class="checkmarkLabel" for="autoplayNextEpisode"><small>Autoplay next
                                             episode in a
                                             series on all
-                                            devices.</small>
-                                        <input type="checkbox" id="autoplayNextEpisode" name="nextEpisode" checked>
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div>
+                                            devices.</small></label>
+                                    <span class="checkmark"></span>
 
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="autoplayPreviews" name="previews" checked>
                                     <label class="checkmarkLabel" for="autoplayPreviews"><small>Autoplay previews while
                                             browsing on all
-                                            devices.</small>
-                                        <input type="checkbox" id="autoplayPreviews" name="previews" checked>
-                                        <span class="checkmark"></span>
-                                    </label>
+                                            devices.</small></label>
+                                    <span class="checkmark"></span>
                                 </div>
                             </div>
                         </div>
